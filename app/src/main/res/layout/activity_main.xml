@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/udacity_background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/map"
+            android:layout_width="@dimen/imWidthHeight"
+            android:layout_height="@dimen/imWidthHeight"
+            android:layout_marginLeft="@dimen/ibMarginLeft"
+            android:layout_marginStart="@dimen/ibMarginLeft"
+            android:background="@drawable/google_maps"
+            android:contentDescription="@string/todo"
+            android:onClick="goToMap"/>
+
+        <ImageButton
+            android:id="@+id/www"
+            android:layout_width="@dimen/imWidthHeight"
+            android:layout_height="@dimen/imWidthHeight"
+            android:layout_marginLeft="@dimen/ibMarginLeft"
+            android:layout_marginStart="@dimen/ibMarginLeft"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/udacity_logo"
+            android:contentDescription="@string/todo"
+            android:onClick="goToWebsite" />
+
+        <ImageButton
+            android:id="@+id/phone"
+            android:layout_width="@dimen/imWidthHeight"
+            android:layout_height="@dimen/imWidthHeight"
+            android:layout_marginLeft="@dimen/ibMarginLeft"
+            android:layout_marginStart="@dimen/ibMarginLeft"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/phone"
+            android:contentDescription="@string/todo"
+            android:onClick="callUs" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="225dp"
+        android:layout_toEndOf="@id/ll_left"
+        android:layout_toRightOf="@id/ll_left"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="goToMap"
+            android:text="@string/_2465_latham_st_mountain_view_ca_94043"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSize" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="goToWebsite"
+            android:text="@string/www_udacity_com"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSize" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:onClick="callUs"
+            android:text="@string/_650_555_5555"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSize" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:src="@drawable/exit"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="exit"
+        android:contentDescription="@string/todo" />
+
+</RelativeLayout>

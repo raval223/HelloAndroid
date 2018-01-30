@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <dimen name="textSize">20sp</dimen>
+    <dimen name="ibMarginLeft">20dp</dimen>
+    <dimen name="imWidthHeight">50dp</dimen>
+</resources>
